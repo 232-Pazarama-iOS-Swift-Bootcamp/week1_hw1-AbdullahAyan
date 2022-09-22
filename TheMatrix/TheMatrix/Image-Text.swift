@@ -1,19 +1,12 @@
 //
-//  main.swift
-//  Homework1
+//  Image-Text.swift
+//  TheMatrix
 //
-//  Created by Abdullah Ayan on 21.09.2022.
+//  Created by Abdullah Ayan on 22.09.2022.
 //
 
 import Foundation
 
-let openingMessages = """
-The Matrix has you...
-
-Follow the white rabbit...
-
-Knock knock, Neo.
-"""
 
 let theMatrix = """
  ______   __  __     ______        __    __     ______     ______   ______     __     __  __
@@ -24,25 +17,11 @@ let theMatrix = """
 
 """
 
-print(theMatrix)
-wait()
-go()
+let openingMessages = """
+The Matrix has you...
 
-print(openingMessages)
+Follow the white rabbit...
 
-let input = readLine()
+Knock knock, Neo.
+"""
 
-print(input!)
-
-
-func wait(){
-    do {
-        sleep(2)
-    }
-}
-
-func go(){
-    for _ in Range(0...50) {
-        print("")
-    }
-}
