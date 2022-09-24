@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D591C3A28DED5100081BB92 /* GiveUpMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D591C3928DED5100081BB92 /* GiveUpMenu.swift */; };
+		3D591C3C28DEDA220081BB92 /* OracleMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D591C3B28DEDA220081BB92 /* OracleMenu.swift */; };
+		3D591C5E28DF03670081BB92 /* ProfilMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D591C5D28DF03670081BB92 /* ProfilMenu.swift */; };
 		3D7DFAD828DD02D40019C6F0 /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7DFAD728DD02D40019C6F0 /* Persons.swift */; };
 		3D9073C228DC95B8008C1551 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9073C128DC95B8008C1551 /* main.swift */; };
 		3D9073C928DC9CB6008C1551 /* Image-Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9073C828DC9CB6008C1551 /* Image-Text.swift */; };
@@ -32,6 +35,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3D591C3928DED5100081BB92 /* GiveUpMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveUpMenu.swift; sourceTree = "<group>"; };
+		3D591C3B28DEDA220081BB92 /* OracleMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracleMenu.swift; sourceTree = "<group>"; };
+		3D591C5D28DF03670081BB92 /* ProfilMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilMenu.swift; sourceTree = "<group>"; };
 		3D7DFAD728DD02D40019C6F0 /* Persons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persons.swift; sourceTree = "<group>"; };
 		3D9073BE28DC95B8008C1551 /* TheMatrix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TheMatrix; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9073C128DC95B8008C1551 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -93,6 +99,9 @@
 				3DE2B8A128DDF2C100F45D2A /* TrainingMenu.swift */,
 				3DE2B8A328DDF9D300F45D2A /* RestMenu.swift */,
 				3DE2B8A528DDFF3900F45D2A /* MorpheusMenu.swift */,
+				3D591C3928DED5100081BB92 /* GiveUpMenu.swift */,
+				3D591C3B28DEDA220081BB92 /* OracleMenu.swift */,
+				3D591C5D28DF03670081BB92 /* ProfilMenu.swift */,
 			);
 			path = Menus;
 			sourceTree = "<group>";
@@ -163,7 +172,10 @@
 				3D7DFAD828DD02D40019C6F0 /* Persons.swift in Sources */,
 				3DE2B8A228DDF2C100F45D2A /* TrainingMenu.swift in Sources */,
 				3DE2B8A628DDFF3900F45D2A /* MorpheusMenu.swift in Sources */,
+				3D591C5E28DF03670081BB92 /* ProfilMenu.swift in Sources */,
 				3DE2B8A428DDF9D300F45D2A /* RestMenu.swift in Sources */,
+				3D591C3A28DED5100081BB92 /* GiveUpMenu.swift in Sources */,
+				3D591C3C28DEDA220081BB92 /* OracleMenu.swift in Sources */,
 				3D9073C228DC95B8008C1551 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

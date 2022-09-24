@@ -15,7 +15,8 @@ struct MartialArt: Sellable {
 }
 
 
-struct Cookie: NeoSellable {
+struct Cookie: NeoSellable,Equatable {
+    var wasItTaken = false
     var cost: Int    
     var flavor: String
 }

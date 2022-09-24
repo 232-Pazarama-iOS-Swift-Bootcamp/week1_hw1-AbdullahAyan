@@ -7,27 +7,31 @@
 
 import Foundation
 
-//print(openingMessages)
-//wait()
-//go()
-//print(theMatrix)
-//wait()
-//go()
-//let tempPerson = Person()
+print(openingMessages)
+wait()
+go()
+print(theMatrix)
+wait()
+go()
 
-let tempPerson = Person(name: "Thomas Anderson", job: "IT", age: 22, didTakeTheRedPill: true)
+
+let tempPerson = Person()
 var person: Person!
+
+print(messageFromMorpheus)
+goWithEnter()
 
 if tempPerson.name == "Thomas Anderson" && tempPerson.didTakeTheRedPill{
     person = Neo(name: tempPerson.name, job: tempPerson.job, age: tempPerson.age, didTakeTheRedPill: tempPerson.didTakeTheRedPill)
     actions.append("Oracle is waiting you!")
+    executeMainMenu()
 }else if tempPerson.didTakeTheRedPill {
     person = Zionian(name: tempPerson.name, job: tempPerson.job, age: tempPerson.age, didTakeTheRedPill: tempPerson.didTakeTheRedPill)
+    executeMainMenu()
 }else {
     person = tempPerson
+    print("Live in your unreal world! (Take the Red Pill to play.)")
 }
-
-executeMainMenu()
 
 
 
@@ -66,7 +70,7 @@ func takeValidInput(range0to range: Int) -> Int{
                 if num >= 0 && num < range {
                     return num
                 }
-                print("Enter 0-\(range) value")
+                print("Enter 0-\(range-1) value")
             }
             print("Enter a number,not other thing.")
         }

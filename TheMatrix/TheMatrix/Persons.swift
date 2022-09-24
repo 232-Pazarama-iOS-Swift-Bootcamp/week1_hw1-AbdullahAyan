@@ -8,11 +8,11 @@
 import Foundation
 
 struct Agent {
-    static var killedAgent: Float = 0
-    var dieabilty: Float {
-        if Agent.killedAgent < 20 {
+    static var deadAgent: Double = 0
+    static var dieabilty: Double {
+        if Agent.deadAgent < 20 {
             return 1.0
-        }else if Agent.killedAgent < 60 {
+        }else if Agent.deadAgent < 60 {
             return 2.0
         }else {
             return 3.0
@@ -21,23 +21,22 @@ struct Agent {
 }
 
 class Neo: Zionian {
-    static var eatanCookies = 0
+    static var eatenCookies = 0
 }
 
 class Zionian: Person{
     var trainability = 1.0 {
         didSet {
-            print("\(oldValue) -> \(trainability)")
+            print("Trainabilty:\n\(String(format: "%.1f", oldValue)) -> \(String(format: "%.1f", trainability))\n")
         }
     }
     var killability = 1.0 {
         didSet {
-            print("\(oldValue) -> \(killability)")
+            print("Killability:\n\(String(format: "%.1f", oldValue)) -> \(String(format: "%.1f", killability))\n")
         }
     }
     var killedAgent = 0
     var skillLevel = 0
-    var isSpokeWithMorpheus = false
     var isRested = true
 }
 

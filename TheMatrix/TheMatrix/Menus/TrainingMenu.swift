@@ -11,9 +11,7 @@ func executeTrainingMenu() {
     go()
     let person = person as! Zionian
     
-    if !person.isSpokeWithMorpheus {
-        print("Talk to Morpheus first")
-    }else if person.trainability == 1.0 {
+    if person.skillLevel == 0 {
         print("Learn some skills before training!")
     }else if person.isRested {
         person.killability *= person.trainability

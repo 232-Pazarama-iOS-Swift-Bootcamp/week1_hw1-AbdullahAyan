@@ -7,7 +7,7 @@
 
 import Foundation
 
-var actions = ["Fight with Agents","Do Training","Rest","Speak with Morpheus","Give Up"]
+var actions = ["Profile","Fight with Agents","Do Training","Rest","Speak with Morpheus","Give Up"]
 var choice: String?
 
 func executeMainMenu(){
@@ -19,14 +19,22 @@ func executeMainMenu(){
     let selection = takeValidInput(range0to: actions.count)
     
     switch selection {
+    case -1:
+        executeMainMenu()
     case 0:
-        executeFightMenu()
+        executeProfilMenu()
     case 1:
-        executeTrainingMenu()
+        executeFightMenu()
     case 2:
-        executeRestMenu()
+        executeTrainingMenu()
     case 3:
+        executeRestMenu()
+    case 4:
         executeMorpheusMenu()
+    case 5:
+        executeGiveUpMenu()
+    case 6:
+        executeOracleMenu()
     default:
         print("UNCODED MENU")
         
